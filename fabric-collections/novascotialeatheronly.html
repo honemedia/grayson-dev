@@ -1,0 +1,34 @@
+<h3>Nova Scotia Leather</h3>
+<div class="fabric-row">
+	<!-- swatch 1 -->
+	<a href="media/img/photos/fabrics-900x475/novascotia-leather/novascotialeather.jpg" class="MagicZoom" rel="zoom-position: bottom; zoom-width: 540px; zoom-height: 240px;"><img src="media/img/photos/fabrics-60x60/novascotia-leather/novascotialeather.jpg"/></a>
+</div>
+
+<div class="fabric-details">
+	<div class="fabric-details-fader-top"></div>
+	<h2>content:</h2>
+	<p>Polyester Blend</p>
+	
+	<h2>cleaning code:</h2>
+	<p>WS</p>
+	
+	<h2>cleaning instructions:</h2>
+	<p class="fabric-cleaning-instructions">
+	Use Water-Based or Solvent Cleaner. Spot clean this fabric with a dry-cleaning solvent, mild detergent foam or upholstery shampoo, depending on the stain.
+	</p>
+	<div class="fabric-details-fader-btm"></div>
+</div>
+<h2 class="trigger"><span class="icon-btn-arrow-toggle"></span><span class="toggle-text"></span></h2>
+
+
+<!-- FABRIC COLLECTION JS -->			
+<script type="text/javascript"src="media/js/libs/magiczoom/magiczoom.js"></script>						
+<script type="text/javascript">
+$(document).ready(function() {
+	$('h2.trigger').unbind('click');
+	$("h2.trigger").click(function(){
+		$(this).toggleClass("active").prev().slideToggle("fast");
+		return false; //Prevent the browser jump to the link anchor
+	});
+}); 
+</script>

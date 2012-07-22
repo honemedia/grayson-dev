@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'OmnesLight';
+    src: url('../fonts/omnes-light-webfont.eot');
+    src: url('../fonts/omnes-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes-light-webfont.woff') format('woff'),
+         url('../fonts/omnes-light-webfont.ttf') format('truetype'),
+         url('../fonts/omnes-light-webfont.svg#OmnesLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OmnesRegular';
+    src: url('../fonts/omnes-regular-webfont.eot');
+    src: url('../fonts/omnes-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes-regular-webfont.woff') format('woff'),
+         url('../fonts/omnes-regular-webfont.ttf') format('truetype'),
+         url('../fonts/omnes-regular-webfont.svg#OmnesRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OmnesRegularItalic';
+    src: url('../fonts/omnes-regularitalic-webfont.eot');
+    src: url('../fonts/omnes-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes-regularitalic-webfont.woff') format('woff'),
+         url('../fonts/omnes-regularitalic-webfont.ttf') format('truetype'),
+         url('../fonts/omnes-regularitalic-webfont.svg#OmnesRegularItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OmnesMedium';
+    src: url('../fonts/omnes-medium-webfont.eot');
+    src: url('../fonts/omnes-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes-medium-webfont.woff') format('woff'),
+         url('../fonts/omnes-medium-webfont.ttf') format('truetype'),
+         url('../fonts/omnes-medium-webfont.svg#OmnesMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OmnesMediumItalic';
+    src: url('../fonts/omnes-mediumitalic-webfont.eot');
+    src: url('../fonts/omnes-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes-mediumitalic-webfont.woff') format('woff'),
+         url('../fonts/omnes-mediumitalic-webfont.ttf') format('truetype'),
+         url('../fonts/omnes-mediumitalic-webfont.svg#OmnesMediumItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OmnesSemibold';
+    src: url('../fonts/omnes-semibold-webfont.eot');
+    src: url('../fonts/omnes-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes-semibold-webfont.woff') format('woff'),
+         url('../fonts/omnes-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/omnes-semibold-webfont.svg#OmnesSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
