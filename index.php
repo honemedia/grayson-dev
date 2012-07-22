@@ -3,6 +3,7 @@
 
 <div id="mainContainer">
 	<header>
+	<!-- TESTING -->
 		<h1><a class="logo" href="">Grayson Furniture</a></h1>
 		<nav id='nav' role='navigation'></nav>
 	</header>
