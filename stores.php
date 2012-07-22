@@ -5,12 +5,15 @@
 	<h1><a class="logo" href="#home">Grayson Furniture - Store Search</a></h1>
 	<nav id='nav' role='navigation'></nav>
 </header>
-
+<div id="search-collection-id"></div>
 <div class="details-wrapper">
+
+
+
 	<div id="form-container">
 		<form id="user-location" method="post" action="#">
 		    <div id="form-input">
-				<input type="text" id="address" name="address" placeholder="Enter a City, Address, or ZIP Code" />
+				<div id="dealer-search-status">Dealer Location Search:</div><input type="text" id="address" name="address" placeholder="Enter a City, Address, or ZIP Code" />
 			</div>
 		    <div id="submit-btn"><input type="image" id="submit" name="submit" src="media/img/btn-submit.png" alt="Submit" /></div>
 		</form>
@@ -36,7 +39,9 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		var idParam = getURLParameter('id');
+		
 		var id = idParam != 'null' ? "&id="+idParam : '';
+		$('#search-collection-id').html(idParam != 'null'?'<span class="search-collection-id-text">Collection ID: </span> ' + idParam:'');
 		var url = 'db.php?inventory=dealers&query=collections'+id;
 		$('#map-container').storeLocator({'jsonData': true, 'dataLocation': url});
 	});

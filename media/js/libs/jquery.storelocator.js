@@ -167,7 +167,7 @@ $.fn.storeLocator = function(options) {
       if (userinput == "")
         {
           //Show alert and stop processing
-          alert("The input box was blank.");
+          alert("Please enter a City, Address, or ZIP Code");
         }
         else
         {
@@ -192,7 +192,7 @@ $.fn.storeLocator = function(options) {
   //Now all the mapping stuff
   function mapping(orig_lat, orig_lng, origin){
   $(function(){
-
+	  	$('#dealer-search-status').html("Searching Dealers...");
         var dataType;
         var curCollections;
 
@@ -283,7 +283,7 @@ $.fn.storeLocator = function(options) {
 	            }
           
           //Check the closest marker
-          $('#statusMessage').empty();
+          $('#dealer-search-status').empty();
           if(locationset[0][0] > settings.distanceAlert){
           	 
           	 /*$(locationset[0]).each(function(){
@@ -302,6 +302,8 @@ $.fn.storeLocator = function(options) {
           	
           }
           
+          
+          $('#dealer-search-status').html('Dealer Search Results:');
           
           
           //Create the map with jQuery
