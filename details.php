@@ -85,8 +85,8 @@
 		<div class="detail-body-wrap">
 			<div class="img-loader"></div>
 			<div class="img-selected"> 
-				<a href="" id="Zoomer" class="MagicZoom" rel="zoom-position: inner;  click-to-activate: true;">
-					<img src="media/img/schematics/blank.png" alt="blank" />
+				<a href="" id="Zoomer" class="MagicZoom" rel="zoom-position: inner; show-title:false; show-loading:false; click-to-deactivate: true; preload-selectors-big:true;  click-to-activate: true;">
+					<img src="media/img/schematics/blank.png" alt="blank" width="660" height="400" />
 				</a>
 			</div>
 			
