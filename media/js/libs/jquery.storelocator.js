@@ -16,7 +16,7 @@ $.fn.storeLocator = function(options) {
       'zoomLevel'     : 5,
       'pinColor'      : 'fe7569',
       'pinTextColor'  : '000000',
-      'storeLimit'    : 100,
+      'storeLimit'    : 1,
       'distanceAlert' : 60,
       'dataLocation'  : 'locations.xml',
       'listColor1'    : '272728',
@@ -80,6 +80,14 @@ $.fn.storeLocator = function(options) {
     };
   }
 
+
+  function defaultError(){
+	  var idParam = getURLParameter('id');
+          	var id = idParam != 'null' ? "?id="+idParam : '';
+          	document.location.href = "contact.php"+id;
+          	return;
+	  
+  }
   //Reverse geocode to get address for automatic options needed for directions link
   function ReverseGoogleGeocode() 
   {
@@ -180,7 +188,8 @@ $.fn.storeLocator = function(options) {
               mapping(olat, olng, userinput);
             } else {
               //Unable to geocode
-              alert('ERROR! Unable to geocode address');
+              //alert('ERROR! Unable to geocode address');
+              
             }
           });
         }
@@ -278,8 +287,7 @@ $.fn.storeLocator = function(options) {
           
           //alert(locationset[0]);
           if(!locationset[0]){
-	           alert("Unfortunately, no dealers sell this collection");
-	           return;
+	           alert("Unfortunately, no dealers sell this collection");	defaultError();
 	            }
           
           //Check the closest marker
@@ -294,16 +302,21 @@ $.fn.storeLocator = function(options) {
               });
               */
               
-              //markers = locationset;
+            //markers = locationset;
           	
           	//alert(locationset[0][1]);
           	//return;
-          	//$('#statusMessage').html('*Locations are over 60 miles away.')
+          	alert("No Dealers were found within 60 miles of your location. Please contact Albany Industries for additional information.");
+          	//$('#dealer-search-status').html('*Results are over 60 miles.');
+          	defaultError();
           	
+          }else{
+	           $('#dealer-search-status').html('Dealer Search Results:');
+	          
           }
           
           
-          $('#dealer-search-status').html('Dealer Search Results:');
+         
           
           
           //Create the map with jQuery

@@ -1,7 +1,7 @@
 <?php include("header.html"); ?>
 <div id="mainContainer" >
 	<header>
-		<h1><a class="logo" href="#home">Grayson</a></h1>
+		<h1><a class="logo" href="index.php">Grayson</a></h1>
 		<nav id='nav' role='navigation'></nav>
 	</header>
 	

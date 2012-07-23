@@ -2,7 +2,7 @@
 
 <div id="mainContainer">
 <header>
-	<h1><a class="logo" href="#home">Grayson Furniture - Store Search</a></h1>
+	<h1><a class="logo" href="index.php">Grayson Furniture - Store Search</a></h1>
 	<nav id='nav' role='navigation'></nav>
 </header>
 <div id="search-collection-id"></div>
@@ -11,11 +11,14 @@
 
 
 	<div id="form-container">
-		<form id="user-location" method="post" action="#">
+		<form id="user-location" method="post" action="">
 		    <div id="form-input">
 				<div id="dealer-search-status">Dealer Location Search:</div><input type="text" id="address" name="address" placeholder="Enter a City, Address, or ZIP Code" />
 			</div>
-		    <div id="submit-btn"><input type="image" id="submit" name="submit" src="media/img/btn-submit.png" alt="Submit" /></div>
+		    <input type="submit" style="width:100px; " id="submitButton" width="50" height="70px" value="GO" name="submit" alt="Submit" />
+		    <!--<div id="goButton" value="GO" name="submit" onclick='document.forms["user-location"].submit();' value="GO"><span>GO</span><span class="icon-btn-arrow"></span></div>-->
+		   <!-- <div type="submit" onclick='document.forms["dealerform"].submit();' id="goButton" class="goButton" name="submit" >Go</div> -->
+
 		</form>
 	</div>
 	
@@ -26,7 +29,7 @@
 		</div>
 		<div id="map"></div>
 	</div>
- </div><!-- END .details-wrappe -->
+ </div><!-- END .details-wrapper -->
 
 <?php include("footer.html"); ?>	
 

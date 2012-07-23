@@ -2,7 +2,7 @@
 
 <div id="mainContainer" >
 	<header>
-		<h1><a class="logo" href="index.html">Grayson</a></h1>
+		<h1><a class="logo" href="index.php">Grayson</a></h1>
 		<nav id='nav'></nav>
 	</header>
 	

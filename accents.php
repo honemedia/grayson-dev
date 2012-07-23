@@ -2,7 +2,7 @@
 
 <div id="mainContainer" >
 	<header>
-		<h1><a class="logo" href="index.html">Grayson Furniture - Accent Pieces</a></h1>
+		<h1><a class="logo" href="index.php">Grayson Furniture - Accent Pieces</a></h1>
 		<nav id="nav" role="navigation"></nav>
 	</header>
 	
