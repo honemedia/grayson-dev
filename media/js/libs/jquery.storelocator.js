@@ -82,10 +82,10 @@ $.fn.storeLocator = function(options) {
 
 
   function defaultError(){
-	  var idParam = getURLParameter('id');
-          	var id = idParam != 'null' ? "?id="+idParam : '';
-          	document.location.href = "contact.php"+id;
-          	return;
+	  	var idParam = getURLParameter('id');
+        var id = idParam != 'null' ? "?id="+idParam : '';
+        document.location.href = "contact.php"+id;
+        
 	  
   }
   //Reverse geocode to get address for automatic options needed for directions link
@@ -287,7 +287,7 @@ $.fn.storeLocator = function(options) {
           
           //alert(locationset[0]);
           if(!locationset[0]){
-	           alert("Unfortunately, no dealers sell this collection");	defaultError();
+	           alert("Unfortunately, no dealers sell this collection. Please contact Grayson Furniture for additional information.");			    defaultError(); return;
 	            }
           
           //Check the closest marker
@@ -309,7 +309,7 @@ $.fn.storeLocator = function(options) {
           	alert("No Dealers were found within 60 miles of your location. Please contact Grayson Furniture for additional information.");
           	//$('#dealer-search-status').html('*Results are over 60 miles.');
           	defaultError();
-          	
+          	return;
           }else{
 	           $('#dealer-search-status').html('Dealer Search Results:');
 	          
