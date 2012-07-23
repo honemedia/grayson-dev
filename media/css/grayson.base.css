@@ -385,7 +385,10 @@ a.dealer-btn:hover {opacity: .8; -webkit-transition: all .2s ease; -moz-transiti
 	float: left; width: 660px; height: 400px; 
 }
 
-.img-frame {width: 658px; height: 398px;  position: absolute; background: url(../img/btn-zoom.png?v=2) no-repeat bottom left; border: 1px solid rgba(255,255,255,.13); }
+.img-frame {display:none;width: 658px; height: 398px;  position: absolute; background: url(../img/btn-zoom.png?v=2) no-repeat bottom left; border: 1px solid rgba(255,255,255,.13); }
+
+
+
 
 .img-loader {width: 658px; height: 398px; position: absolute; background: url(../img/loader.gif) no-repeat center;}
 
@@ -527,7 +530,7 @@ h2.active span.toggle-text:after {content: 'hide details';}
 /* DETAILS PAGE */
 .details-wrapper {
 	height:auto;
-	min-height: 80px;
+	min-height: 70px;
 	width: 941px;
 	padding: 0 5% 10px 0;
 	margin: 0 auto;
@@ -638,6 +641,16 @@ h2.active span.toggle-text:after {content: 'hide details';}
 	
 }
 
+
+/* iPad [portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.img-frame{background:none}
+}
+
+/* iPhone [portrait + landscape] */
+@media only screen and (max-device-width: 480px) {
+	.img-frame{background:none}
+}
 
 
 

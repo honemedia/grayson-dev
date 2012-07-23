@@ -248,13 +248,13 @@ letter-spacing: 1px;
 
 @media screen and (min-width: 720px) {
 
-	#form-container {margin: 20px 0 20px 0;width: 580px;}
+	#form-container {margin: 20px 0 20px 0;width: 100%;}
 	
 }
 
 @media screen and (min-width: 1024px) {
 
-	#form-container {margin: 20px 0 20px 0;width: 580px;}
+	#form-container {margin: 20px 0 20px 0;width: 100%;}
 	
 }
 
@@ -262,3 +262,4 @@ letter-spacing: 1px;
 
 #form-container {margin: 20px 0 20px 0; width: 100%;}
 }
+
