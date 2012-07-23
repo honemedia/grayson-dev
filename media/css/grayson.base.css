@@ -234,7 +234,7 @@ box-shadow:none; border:none;}
 
 
 
-<<<<<<< HEAD
+
 #goButton {
 	-moz-transition: all 0.4s ease 0s;
     background: -moz-linear-gradient(center top , #4B4B4B 0%, #424242 50%, #393939 100%) repeat scroll 0 0 transparent;
@@ -259,32 +259,6 @@ box-shadow:none; border:none;}
     
 }
 
-
-#submitButton {
-	-moz-transition: all 0.4s ease 0s;
-    background: -moz-linear-gradient(center top , #4B4B4B 0%, #424242 50%, #393939 100%) repeat scroll 0 0 transparent;
-    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.24);
-    color: #a0a0a0;
-    float: left;
-    font-size: 1.375em;
-    height: 33px;
-    margin: 8px 0 10px 0;
-    padding: 6px 0 0 6px;
-    text-align: center;
-    width: 200px;
-     cursor:pointer;
-}
-
-#submitButton:hover {
-	-moz-transition: all 0.4s ease 0s;
-    background: -moz-linear-gradient(center top , #4B4B4B 0%, #424242 50%, #393939 100%) repeat scroll 0 0 transparent;
-    
-    color: #fff;
-    
-    
-}
-=======
->>>>>>> updated contact for styles; TODO: Add functionality
 
 .MagicZoomPup{border:1px solid #fff; }
 
