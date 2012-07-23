@@ -29,7 +29,7 @@ html { margin: 0 10px 20px 10px; padding: 0; background:url(../img/bg.jpg?v=2); 
 body { font-family: 'OmnesRegular', sans-serif; height:100%;margin:0 0 0 0; padding: 0; *font-size: 1em; font-size: 1em; line-height: 1.5em; text-align: justify; color:#ededed;
 	-webkit-font-smoothing:antialiased; font-smoothing:antialiased; text-rendering:optimizeLegibility;}
 	
-a{color:#f4e4af; text-decoration: none; cursor:pointer}
+a{color:#d4cbac; text-decoration: none; cursor:pointer}
 
 /* 3. TYPOGRAPHY  ============================================================================================================================= */
 
@@ -231,13 +231,10 @@ box-shadow:none; border:none;}
 #productDetails{display: none; width:943px; height:500px}
 #productImage{width:600px;height:400px; float:left}
 
-form{text-align: left; font-family: 'OmnesMedium', sans-serif; }
-.formInputLabel{margin-bottom:5px; font-size:16px; color:#ccc}
-.formInput,.formInputMessage{margin-bottom:13px; border:2px solid #999;width:590px; height:30px; background:#ccc; padding:5px; font-size:16px; color:#464646}
-
-.formInputMessage{height:150px }
 
 
+
+<<<<<<< HEAD
 #goButton {
 	-moz-transition: all 0.4s ease 0s;
     background: -moz-linear-gradient(center top , #4B4B4B 0%, #424242 50%, #393939 100%) repeat scroll 0 0 transparent;
@@ -286,6 +283,8 @@ form{text-align: left; font-family: 'OmnesMedium', sans-serif; }
     
     
 }
+=======
+>>>>>>> updated contact for styles; TODO: Add functionality
 
 .MagicZoomPup{border:1px solid #fff; }
 
@@ -604,12 +603,77 @@ h2.active span.toggle-text:after {content: 'hide details';}
 
 	
 /*CONTACT PAGE */
-.contact-title{margin-top:20px;color:#ccc}
-.contact-title-arrow{margin-right:10px; float:left; padding:0 10px 50px 0}
-.contact-description{color:#D4CBAC}
-#contact-container{}
+.contact-page-wrap {float: left; width: 100%; height: auto; position: relative;}
+.contact-page-wrap .sidebar {margin-bottom: 30px;}
+.contact-title{float: left; width: 100%; margin-top:20px; color:#ccc}
+.contact-arrow-wrap {float: left; width: 10%;}
+.contact-title-arrow{float: left;  height: auto; margin-right:10px; float:left; padding:7px 0 0 0}
+
+.contact-title-wrap {float: left; width: 90%; }
+.contact-title-wrap p {float: left; width: 100%; height: auto; padding: 0; margin: 0; text-transform: uppercase;}
+
+.contact-description{color:#d4cbac}
 #contact-side-container{float:left; width:255px; height:500px; text-align:left;  padding:10px; border-right:1px solid #1c1c1c}
+<<<<<<< HEAD
 #contact-form{float:left; width:520px; height:auto;border-left:1px solid #393939; padding-left:20px}
+=======
+
+#contact-form{float:left; width:645px; height:auto; padding-left: 15px;}
+#contact-form form {
+	float: left; width: 100%; height: auto; text-align: left; }
+	
+#contact-form form input,
+#contact-form form textarea,
+#contact-form form select {font-family: 'OmnesMediumItalic', sans-serif; color: #464646; font-size:1.125em; text-indent: 6px; outline: none;}
+#contact-form form select option {outline: none;}
+#contact-form form select {
+	float: left;
+	width: 101%; /* max-width: 100%; */
+	height: 45px;
+	margin: 0 0 14px 0;
+	padding-left: 5px;
+	background: url(../img/contact-select-arrow.jpg) no-repeat right #FBFBFB;
+	border:2px solid #999;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	box-sizing: border-box;
+	-webkit-box-align: center;
+	border-image: initial;
+	white-space: pre;
+	-webkit-rtl-ordering: logical;
+	cursor: pointer;
+}
+
+.formInputLabel{margin-bottom:5px; font-size:16px; color:#ccc}
+.formInput {float: left; margin-bottom: 20px;}
+.formInput, .formInputMessage{margin-bottom:13px; border:2px solid #999;width:99%; height:30px; background:#FBFBFB; padding: 5px 0 5px 1%;  }
+
+.formInputMessage{height:150px }
+
+
+#submitButton {
+	float: left; width: 200px; height: 33px; color: #fff; padding: 6px 0 0 0;
+	font-size: 1em; text-align: center; cursor: pointer;
+	background: #4b4b4b;
+	text-transform: uppercase;
+	-webkit-box-shadow:  1px 1px 2px 0px rgba(0, 0, 0, .24);
+	box-shadow:  1px 1px 2px 0px rgba(0, 0, 0, .24);
+	background: -moz-linear-gradient(top,  #4b4b4b 0%, #424242 50%, #393939 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4b4b4b), color-stop(50%,#424242), color-stop(100%,#393939));
+	background: -webkit-linear-gradient(top,  #4b4b4b 0%,#424242 50%,#393939 100%);
+	background: -o-linear-gradient(top,  #4b4b4b 0%,#424242 50%,#393939 100%);
+	background: -ms-linear-gradient(top,  #4b4b4b 0%,#424242 50%,#393939 100%);
+	background: linear-gradient(to bottom,  #4b4b4b 0%,#424242 50%,#393939 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b4b4b', endColorstr='#393939',GradientType=0 );
+	-webkit-transition: all .4s ease; -moz-transition: all .4s ease; transition: all .4s ease; 	
+
+}
+#submitButton:hover {opacity: .8; -webkit-transition: all .2s ease; -moz-transition: all .2s ease; transition: all .2s ease; }
+
+>>>>>>> updated contact for styles; TODO: Add functionality
 
 				
 /* @media screen and (min-width: 0) =================================================================================================== */
@@ -671,6 +735,7 @@ h2.active span.toggle-text:after {content: 'hide details';}
 	#nav li a {padding: 10px 40px 0; height: 34px;}
 	#nav li:last-child a {padding: 10px 43px 0 43px;}
 	#nav a.selected { }
+	#contact-form form select {padding: 5px 0 0 0; background-image: none; }
 	
 }
 
