@@ -76,29 +76,22 @@
 		
 		<div class="detail-section-spacer">&nbsp;</div>
 		
-		<div id="contact-form" method="post" action="process.php">
-			<form action="#">
-				<div class="formInputLabel">Topic</div>
-				<select name="subject" title="Please select a subject" class="required text-regit"> 
-					<option value="Just Saying Hello">Just Saying Hello</option>
-					<option value="Business Inquiry">Business Inquiry</option>
-					<option value="Career Opportunities">Career Opportunities</option>
-				</select>
-				
-				<div class="formInputLabel">Your Name</div>
-				<input class="formInput" type="text" placeholder=" " title="required: please enter your first name" class="required" />
-				
-				<div class="formInputLabel">Your Email Address</div>
-				<input class="formInput" type="text" />
-				
-				<div class="formInputLabel">Message</div>
-				<textarea class="formInputMessage"></textarea>
-				
-				<div id="submitButton" value="SEND MESSAGE"><span>send message</span><span class="icon-btn-arrow"></span></div>
-				
-			</form>
-			
-		</div>
+		<div id="contact-form">	
+							<form id="contact-us" method="post" action="process.php">
+								<fieldset>
+									<input type="text" name="firstname" placeholder="First Name" title="required: please enter your first name" class="required">
+									<input type="text" name="lastname" placeholder="Last Name" title="required: please enter your last name" class="required">
+									<input type="text" name="org" placeholder="Organization" title="required: please enter your organization" class="required">
+									<input type="text" name="phone" placeholder="Phone Number" title="required: please enter your phone number" class="required">
+									<input type="text" name="email" placeholder="Email Address" title="required: please enter your email address" class="required email">
+									<input type="text" name="offer" placeholder="Offer Code" >
+									<input type="submit" name="submit" class="button" id="submit" value="Download Free Trial Now"  />
+								</fieldset>
+							</form>
+						</div>
+						<div id="contact-form-thanks">
+							<p>Thanks! Your request has been sent.</p>
+						</div>
 	</div><!-- END .contact-page-wrap -->
 
 <?php include("footer.html"); ?>	
