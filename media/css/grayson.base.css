@@ -208,7 +208,7 @@ p.home-left-column, p.home-right-column {font-size: 1em; line-height: 1.5em;}
 .collection-home-brand{text-transform: uppercase;font-size: 1.1rem; letter-spacing: .08em; color: #afa890; font-weight: normal}
 
 .collection-title{margin:145px 0 15px 0;width:255px; font-family: 'Italianno', cursive; font-size: 3.5rem; float:left;  text-transform: capitalize}
-.sectionTitle{font-size:24px;  font-family: 'OmnesRegularItalic'; margin-bottom:20px; color:#d4cbac}
+.sectionTitle{font-size:24px;  font-family: 'OmnesRegularItalic'; margin-bottom:10px; color:#d4cbac}
 .collection-brand{text-transform: uppercase;width:255px; font-size: 1.1rem; letter-spacing: .08em; color: #afa890; font-weight: normal; clear:left; float:left}
 
 .collection{width:auto;text-align: center; clear:left;}
@@ -232,10 +232,10 @@ box-shadow:none; border:none;}
 #productImage{width:600px;height:400px; float:left}
 
 form{text-align: left; font-family: 'OmnesMedium', sans-serif; }
-.formInputLabel{margin-bottom:5px; font-size:16px; color:#808080}
-.formInput,.formInputMessage{margin-bottom:13px; border:2px solid #999;width:530px; height:30px; background:#ccc; padding:5px; font-size:16px; color:#464646}
+.formInputLabel{margin-bottom:5px; font-size:16px; color:#ccc}
+.formInput,.formInputMessage{margin-bottom:13px; border:2px solid #999;width:590px; height:30px; background:#ccc; padding:5px; font-size:16px; color:#464646}
 
-.formInputMessage{height:100px}
+.formInputMessage{height:150px }
 
 
 #submitButton {
@@ -246,7 +246,7 @@ form{text-align: left; font-family: 'OmnesMedium', sans-serif; }
     float: left;
     font-size: 1.375em;
     height: 33px;
-    margin: 8px 0;
+    margin: 8px 0 10px 0;
     padding: 6px 0 0 6px;
     text-align: center;
     width: 200px;
@@ -575,9 +575,11 @@ h2.active span.toggle-text:after {content: 'hide details';}
 
 
 	
-		
-
-
+/*CONTACT PAGE */
+.contact-title{margin-top:20px;color:#ccc}
+#contact-container{}
+#contact-side-container{float:left; width:255px; height:500px; text-align:left;  padding:10px; border-right:1px solid #1c1c1c}
+#contact-form{float:left; width:520px; height:auto;border-left:1px solid #393939; padding-left:20px}
 				
 /* @media screen and (min-width: 0) =================================================================================================== */
 @media screen and (min-width: 0em) {
