@@ -1,6 +1,6 @@
 <?php include("header.html"); ?>
 
-
+<link media="all" rel="stylesheet" href="media/css/grayson.base.css?v=2" />
 <div id="mainContainer">
 	<header>
 	<!-- TESTING -->
@@ -62,7 +62,7 @@
 <script type="text/javascript">
 //$('#mainContainer').hide();
 $(document).ready(function() {
-	getData("GET", "http://honemedia.com/dev/grayson/r2/db.php?callback=collectionData&inventory=collections&query=itemID","featuredCollectionData","callback=featuredCollectionData&errorCallBackName=featuredCollectionDataError");
+	getData("GET", "db.php?callback=collectionData&inventory=collections&query=itemID","featuredCollectionData","callback=featuredCollectionData&errorCallBackName=featuredCollectionDataError");
 });
 
 $('#homeFeatured').click(function() { 

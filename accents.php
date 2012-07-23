@@ -49,7 +49,7 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
-	getData("GET", "http://honemedia.com/dev/grayson/r2/db.php?callback=collectionAccentsData&inventory=products&query=collectionID","collectionAccentsData","callback=collectionAccentsData&errorCallBackName=collectionAccentsDataError");
+	getData("GET", "db.php?callback=collectionAccentsData&inventory=products&query=collectionID","collectionAccentsData","callback=collectionAccentsData&errorCallBackName=collectionAccentsDataError");
 	
 	
     

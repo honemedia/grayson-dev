@@ -306,7 +306,7 @@ $.fn.storeLocator = function(options) {
           	
           	//alert(locationset[0][1]);
           	//return;
-          	alert("No Dealers were found within 60 miles of your location. Please contact Albany Industries for additional information.");
+          	alert("No Dealers were found within 60 miles of your location. Please contact Grayson Furniture for additional information.");
           	//$('#dealer-search-status').html('*Results are over 60 miles.');
           	defaultError();
           	
