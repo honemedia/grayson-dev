@@ -456,12 +456,13 @@ a.dealer-btn:hover {opacity: .8; -webkit-transition: all .2s ease; -moz-transiti
 
 #fabric-collections {float: left; width: 100%; height: auto;}
 .fabric-row .img-selected {height: 60px;}
-.fabric-row {margin: 5px 0 0 0; border-bottom: 1px dashed #444;  }
+.fabric-row { margin: 5px 0 0 0; border-bottom: 1px dashed #444;  }
 .fabric-row .MagicZoomHint {display: none !important;}
 .fabric-row a {
 	width: 64px; height: 60px; margin: 0 3px 0 0;
-/* 	-webkit-box-shadow:  1px 1px 3px 0px rgba(0, 0, 0, .35);box-shadow:  1px 1px 3px 0px rgba(0, 0, 0, .35); */
 }
+.fabric-row a img {width: 60px; height: 60px; min-width: 60px; }
+
 .fabric-details {
 
 	float: left; width: 90%; max-height: 275px; overflow-y: auto; display: none; padding: 0 5%;
