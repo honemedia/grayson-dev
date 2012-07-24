@@ -76,28 +76,32 @@
 		
 		<div class="detail-section-spacer">&nbsp;</div>
 		
-		<div id="contact-form" method="post" action="process.php">
-			<form action="#">
-				<div class="formInputLabel">Topic</div>
-				<select name="subject" title="Please select a subject" class="required text-regit"> 
-					<option value="Just Saying Hello">Just Saying Hello</option>
-					<option value="Business Inquiry">Business Inquiry</option>
-					<option value="Career Opportunities">Career Opportunities</option>
-				</select>
-				
-				<div class="formInputLabel">Your Name</div>
-				<input class="formInput" type="text" placeholder=" " title="required: please enter your first name" class="required" />
-				
-				<div class="formInputLabel">Your Email Address</div>
-				<input class="formInput" type="text" />
-				
-				<div class="formInputLabel">Message</div>
-				<textarea class="formInputMessage"></textarea>
-				
-				<div id="submitButton" value="SEND MESSAGE"><span>send message</span><span class="icon-btn-arrow"></span></div>
-				
+		<div id="contact-form">	
+			<form id="contact-us" method="post" action="process.php">
+				<fieldset>
+					<div class="formInputLabel">Topic *</div>
+					<select name="subject" title="Required: please select a topic" class="required text-regit"> 
+						<option value="">please select a topic</option>
+						<option value="Just Saying Hello">Just Saying Hello</option>
+						<option value="Business Inquiry">Business Inquiry</option>
+						<option value="Career Opportunities">Career Opportunities</option>
+					</select>
+					
+					<div class="formInputLabel">Your Name *</div>
+					<input type="text" name="name" placeholder="" title="Required: please enter your name" class="required">
+					
+					<div class="formInputLabel">Your Email Address *</div>
+					<input type="text" name="email" placeholder="" title="Required: please enter your email address" class="required email">
+					
+					<div class="formInputLabel">Message</div>
+					<textarea class="formInputMessage" name="message"></textarea>
+					
+					<input type="submit" name="submit" class="button" id="submit" value="send message"  />
+				</fieldset>
 			</form>
-			
+		</div>
+		<div id="contact-form-thanks">
+			<p>Thanks! Your message has been sent.</p>
 		</div>
 	</div><!-- END .contact-page-wrap -->
 
@@ -136,6 +140,7 @@ function highlight(field) {
 }
 
 /* MAKE HTML5 PLACEHOLDERS WORK FOR FIREFOX */
+/*
 function activatePlaceholders() {
 		var detect = navigator.userAgent.toLowerCase(); 
 		if (detect.indexOf("safari") > 0) return false;
@@ -165,6 +170,7 @@ function activatePlaceholders() {
 	window.onload = function() {
 		activatePlaceholders();
 	}
+*/
 
 
 </script>
