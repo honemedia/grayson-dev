@@ -8,6 +8,6 @@ $message = strip_tags($_POST['message']);
 
 // Send Message
 mail( "mason@honemedia.com", "Contact Form Submission",
-"Name: $name\nEmail: $email\nPhone: $phone\nMessage: $message\n",
-"From: Graysonfurniture.com <mason@honemedia.com>" );
+"Topic: $subject\nName: $name\nEmail: $email\nMessage: $message\n",
+"From: Grayson Furniture <mason@honemedia.com>" );
 ?>
