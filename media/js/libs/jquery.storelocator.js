@@ -13,7 +13,7 @@ $.fn.storeLocator = function(options) {
       'listDiv'       : 'list',
       'formID'        : 'user-location',
       'inputID'       : 'address',
-      'zoomLevel'     : 5,
+      'zoomLevel'     : 10,
       'pinColor'      : 'fe7569',
       'pinTextColor'  : '000000',
       'storeLimit'    : 1,

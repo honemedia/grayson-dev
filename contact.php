@@ -10,7 +10,8 @@
 	<div class="contact-page-wrap">
 		<div class="sidebar">
 			<div class="section-title">Contact Us</div>
-			<p>Send a message from the contact form or you can contact us directly from the details provided below. Please allow one business day for a response.</p>
+			<p>
+			Feel free to contact us directly about any Grayson furniture inquiry. Please allow one business day for a response.</p>
 			
 			<div class="contact-title">
 				<div class="contact-arrow-wrap">
