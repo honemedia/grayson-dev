@@ -491,7 +491,7 @@ a.dealer-btn:hover {opacity: .8; -webkit-transition: all .2s ease; -moz-transiti
 .fabric-row .MagicZoomHint {display: none !important;}
 .fabric-row a {width: 60px; height: 60px; margin: 0 6px 6px 0; float: left;}
 .fabric-row a img {width: 60px; height: 60px; min-width: 60px; }
-.fabric-row a.extra-fabric-row { margin: 6px 6px 6px 0; }
+.fabric-row a.extra-fabric-row { margin: 0 6px 6px 0; }
 
 .fabric-details {
 
