@@ -32,7 +32,7 @@
 				<div class="contact-title-wrap">
 					<p>phone</p>
 					<div class="contact-description">
-						(662)534-9800
+						(662) 534-9800
 					</div>
 				</div>
 			</div>
@@ -44,7 +44,7 @@
 				<div class="contact-title-wrap">
 					<p>fax</p>
 					<div class="contact-description">
-						(662)534-9805
+						(662) 534-9805
 					</div>
 				</div>
 			</div>

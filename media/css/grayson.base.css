@@ -153,14 +153,41 @@ footer ul li a:hover {color: #fff;}
 
 
 /* HOME PAGE */
-
+.hero-mantle-wrap {float: left; position: relative; width: 100%; height: auto;}
+.hero-mantle-label {
+	position: absolute; width: 153px; height: 26px; top:31px; left: 35px;
+	background: #434343; opacity: .8; z-index: 9999;
+	font-size: 0.9375em;
+	color: #bfb7b2; font-family: 'OmnesMediumItalic', Helvetica, Arial, sans-serif;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+	padding: 4px 0 0 10px; 
+}
 #homeFeatured {float:left; width: 940px; height: 450px; margin-bottom:40px; background: url(../img/loader.gif) no-repeat center;}
 #homeFeatured img {
 	cursor:pointer; width:940px; height:450px; -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .5); box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .5);}
 .homeFeaturedPlay{display:none;z-index:999;position:absolute; top:253px; float:right }
-.homeFeaturedWording{cursor:pointer;display:none; z-index:999;position:absolute; top:253px;  width:auto; padding:16px; line-height:28px; background-color:rgba(39,39,39,0.8); filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#27272790', EndColorStr='#27272790');-ms-filter:'progid:DXImageTransform.Microsoft.gradient(startColorstr=#27272700, endColorstr=#27272700)';
- font-family:'OmnesRegularItalic'; font-size:25px; margin:0 15px 0 25px}
-.homeFeaturedWording:hover{}
+.homeFeaturedWording{
+	cursor:pointer;display:none;
+	z-index:999; position:absolute; top:62px; left: 35px;
+	width:auto; padding:16px; line-height:28px;
+	font-size:25px; margin:0;
+	background: rgb(72,71,70);
+	background: -moz-linear-gradient(top,  rgba(72,71,70,1) 0%, rgba(40,40,40,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(72,71,70,1)), color-stop(100%,rgba(40,40,40,1)));
+	background: -webkit-linear-gradient(top,  rgba(72,71,70,1) 0%,rgba(40,40,40,1) 100%);
+	background: -o-linear-gradient(top,  rgba(72,71,70,1) 0%,rgba(40,40,40,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(72,71,70,1) 0%,rgba(40,40,40,1) 100%);
+	background: linear-gradient(to bottom,  rgba(72,71,70,1) 0%,rgba(40,40,40,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#484746', endColorstr='#282828',GradientType=0 );
+	opacity: .8;
+	-webkit-transition: all .4s ease; -moz-transition: all .4s ease; transition: all .4s ease;
+	
+}
+
+.homeFeaturedWording:hover{
+	opacity: 1;
+	-webkit-transition: all .2s ease; -moz-transition: all .2s ease; transition: all .2s ease;
+}
 
 
 .grayson-difference {
@@ -196,7 +223,8 @@ p.home-left-column, p.home-right-column {font-size: 1em; line-height: 1.5em;}
 	opacity: .85;
 }
 .collection:hover, .collection-last:hover {
-	background-color: rgba(72,72,72,.3); -webkit-transition: all .1s ease; -moz-transition: all .1s ease; transition: all .1s ease;
+	background-color: rgba(72,72,72,.3);
+	-webkit-transition: all .1s ease; -moz-transition: all .1s ease; transition: all .1s ease;
 	-webkit-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, .4);
 	box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, .4);
 	opacity: 1;
@@ -204,8 +232,8 @@ p.home-left-column, p.home-right-column {font-size: 1em; line-height: 1.5em;}
 .collection-last {background-image: none;}
 .collection-text {float: left; width: 270px; cursor: pointer;}
 
-.collection-home-title{font-family: 'Italianno', cursive; font-size: 3.1em; text-transform: capitalize; margin-right:8px}
-.collection-home-brand{text-transform: uppercase;font-size: 1.1em; letter-spacing: .08em; color: #afa890; font-weight: normal}
+.collection-home-title{font-family: 'Italianno', cursive; font-size: 2em; text-transform: capitalize; margin-right:8px}
+.collection-home-brand{text-transform: uppercase;font-size: 20px; color: #afa890; font-weight: normal; font-style: normal; font-family: 'OmnesRegular';}
 
 .collection-title{margin:145px 0 15px 0;width:255px; font-family: 'Italianno', cursive; font-size: 3.5em; float:left;  text-transform: capitalize}
 .section-title{font-size:24px;  font-family: 'OmnesRegularItalic'; margin-bottom:10px; color:#d4cbac}
@@ -367,6 +395,8 @@ a.dealer-btn {
 .icon-btn-arrow {float: right; width: 15px; height: 16px; background: url(../img/icon-btn-arrow.png) no-repeat; margin: 7px 13px 0 0;}
 a.dealer-btn:hover {opacity: .8; -webkit-transition: all .2s ease; -moz-transition: all .2s ease; transition: all .2s ease; }
 
+.feature-btn-arrow {margin: 0 0 0 10px;}
+
 #fabrics h3 {margin: -16px 0 5px 0;}
 
 .detail-body-wrap {
@@ -456,12 +486,11 @@ a.dealer-btn:hover {opacity: .8; -webkit-transition: all .2s ease; -moz-transiti
 
 #fabric-collections {float: left; width: 100%; height: auto;}
 .fabric-row .img-selected {height: 60px;}
-.fabric-row { margin: 5px 0 0 0; border-bottom: 1px dashed #444;  }
+.fabric-row {float: left; width: 100%; margin: 5px 0 0 0; border-bottom: 1px dashed #444;  }
 .fabric-row .MagicZoomHint {display: none !important;}
-.fabric-row a {
-	width: 64px; height: 60px; margin: 0 3px 0 0;
-}
+.fabric-row a {width: 60px; height: 60px; margin: 0 6px 6px 0; float: left;}
 .fabric-row a img {width: 60px; height: 60px; min-width: 60px; }
+.fabric-row a.extra-fabric-row { margin: 6px 6px 6px 0; }
 
 .fabric-details {
 
@@ -594,6 +623,7 @@ h2.active span.toggle-text:after {content: 'hide details';}
 	float: left; width: 100%; height: auto; text-align: left; }
 field set {float: left; width: 100%; margin: 0; padding: 0;}
 	
+input,
 #contact-us input,
 #contact-us textarea,
 #contact-us select {
@@ -608,7 +638,25 @@ field set {float: left; width: 100%; margin: 0; padding: 0;}
 	border:2px solid #999;
 	margin: 0 0 14px 0;
 	background-color: #d2d0cc;
+	opacity: .6;
+	-webkit-transition: all .4s ease; -moz-transition: all .4s ease; transition: all .4s ease; 	
 }
+
+#contact-us input[type="submit"],
+input[type="submit"]
+ {opacity: 1;}
+
+input:focus,
+#contact-us input:focus,
+#contact-us textarea:focus,
+#contact-us select:focus,
+input:hover,
+#contact-us input:hover,
+#contact-us textarea:hover,
+#contact-us select:hover {
+	opacity: 1;
+	-webkit-transition: all .2s ease; -moz-transition: all .2s ease; transition: all .2s ease; 	
+	}
 
 #contact-us textarea {height: 140px; padding: 5px 0 0 2px;}
 
@@ -656,6 +704,15 @@ field set {float: left; width: 100%; margin: 0; padding: 0;}
 
 .error { color: #ede1b7; margin: -88px 0 0 0; float: right; font-stretch: italic;}
 #contact-form-thanks p {float: left; width: auto; font-size: 1.5em; margin: 0 0 20px 17px}
+
+.list-overlay {
+	position: absolute;
+	bottom: 24px;
+	z-index: 999;
+	width: 250px;
+	height: 84px;
+	background: url(../img/fader.png) no-repeat transparent;
+}
 
 				
 /* @media screen and (min-width: 0) =================================================================================================== */

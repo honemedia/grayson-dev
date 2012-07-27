@@ -8,9 +8,14 @@
 		<nav id='nav' role='navigation'></nav>
 	</header>
 	
-	<div class="homeFeaturedPlay"><img src="media/img/arrow.png" alt="" /></div>
-	<div class="homeFeaturedWording"></div>
-	<div id="homeFeatured"></div>
+	<div class="hero-mantle-wrap">
+		<div class="hero-mantle-label">Featured Collections</div>
+		<div class="homeFeaturedPlay"><img src="media/img/icon-btn-arrow.png?v=2" alt="" /></div>
+		<div class="homeFeaturedWording"></div>
+		<div id="homeFeatured"></div>
+	</div>
+	
+		
 	
 	<div class="grayson-difference-spacer-top"></div>
 	<div class="grayson-difference">
@@ -22,28 +27,25 @@
 	
 	
 	<div class="grayson-difference-columns">
-		<p class="home-left-column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<p>Grayson harkens back to a time when upholstered furniture was designed with the goal of improving the living environment of the Customer. Style and Quality were front and center. Mass consumerism had not yet assaulted our world. Graysonis Made in America at an Employee-owned factory. The skilled workforce has roots reaching back over 50 years. Our pledge is to deliver upholstered furniture designed to provide decades of enjoyment to your family, and to steadfastly stand behind our product.
 		</p>
-		
-		<p class="home-right-column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	
 		<div class="home-module-container">
 			<div class="home-info-module">
-				<img src="media/img/home1.png" alt="" />
-				<div class="home-info-module-title">Comfortable Cushion Covers</div>
-				<p class="home-info-module-description">100% cotton cover adds comfort and effectively retains fill. Internal baffle construction prevents fill from shifting
-				</p>
+				<img src="media/img/home-grayson-fabrics.jpg" alt="" />
+				<div class="home-info-module-title">Luxurious Fabrics</div>
+				<p class="home-info-module-description">Grayson fabrics are selected for their luxurious feel, timeless style and lasting durability.</p>
 			</div>
 			
 			<div class="home-info-module">
-				<img src="media/img/home1.png" alt="" />
-				<div class="home-info-module-title">Seat Cushion Construction</div>
-				<p class="home-info-module-description">Foam core provides additional support where it is needed most. Fill envelope surrounds foam core and provides luxurious comfort.</p>
+				<img src="media/img/home-grayson-cushion.jpg" alt="" />
+				<div class="home-info-module-title">Cushion Construction</div>
+				<p class="home-info-module-description">Grayson cushions are at the core of our furniture.  Our Ultra-soft, high density foam cores are blanketed by sumptuous Pacific Coast Featherblend casings.</p>
 			</div>
 			
 			<div class="home-info-module-last">
-				<img src="media/img/home1.png" alt="" />
-				<div class="home-info-module-title">FeatherBlend Filling</div>
+				<img src="media/img/home-grayson-pacific-coast.jpg?v=2" alt="" />
+				<div class="home-info-module-title">Pacific Coast Featherblend</div>
 				<p class="home-info-module-description">Featherblend filling comprised of feather and down or softness and Ultima Supreme polyester fiber for enhanced resiliency and loft.</p>
 			</div>
 		</div><!-- END .home-module-container -->
@@ -77,11 +79,12 @@ function onBefore(){
 	var collectionData = $(this).attr('id').split("-");
 	var collectionName = collectionData[collectionData.length-1];
 	
-	$('.homeFeaturedWording').html('<span class="collection-home-title">'+$(this).attr('class')+'</span> <span class="collection-home-brand">'+collectionName+'</span> <img src="media/img/arrow.png" />')
+	$('.homeFeaturedWording').html('<span class="collection-home-title">'+$(this).attr('class')+'</span> <span class="collection-home-brand">'+collectionName+'</span> <img src="media/img/icon-btn-arrow.png" class="feature-btn-arrow" />')
 	
 	$('.homeFeaturedWording').fadeIn('slow');
 	
-	}
+}
+
 
 </script>
 

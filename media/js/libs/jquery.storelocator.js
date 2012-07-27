@@ -13,14 +13,14 @@ $.fn.storeLocator = function(options) {
       'listDiv'       : 'list',
       'formID'        : 'user-location',
       'inputID'       : 'address',
-      'zoomLevel'     : 20,
-      'pinColor'      : 'fe7569',
-      'pinTextColor'  : '000000',
+      'zoomLevel'     : 12,
+      'pinColor'      : '1f1f1f',
+      'pinTextColor'  : 'ffffff',
       'storeLimit'    : 10,
       'distanceAlert' : 60,
       'dataLocation'  : 'locations.xml',
-      'listColor1'    : '272728',
-      'listColor2'    : '272728',
+      'listColor1'    : '(39,39,40,.5)',
+      'listColor2'    : '(39,39,40,.5)',
       'bounceMarker'  : true,
       'slideMap'      : true,
       'modalWindow'   : false,
@@ -455,17 +455,21 @@ $.fn.storeLocator = function(options) {
               }
 
               //Add the list li background colors
-              $("#" + settings.listDiv + " li:even .list-details").css('background', "#" + settings.listColor1);
-              $("#" + settings.listDiv + " li:odd .list-details").css('background', "#" + settings.listColor2);
+              $("#" + settings.listDiv + " li:even .list-details").css('background', "rgba" + settings.listColor1);
+              $("#" + settings.listDiv + " li:odd .list-details").css('background', "rgba" + settings.listColor2);
                
               //Custom marker function - alphabetical
               function createMarker(point, name, address, letter) {
                 //Set up pin icon with the Google Charts API for all of our markers
+                
+                                 
                 var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=" + letter + "|" + settings.pinColor + "|" + settings.pinTextColor,
                   new google.maps.Size(21, 34),
                   new google.maps.Point(0,0),
                   new google.maps.Point(10, 34));
-                var pinShadow = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_shadow",
+                //var pinShadow = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_shadow",
+                var pinShadow = new google.maps.MarkerImage("media/img/map-pin-shadow.png?v=2",
+
                   new google.maps.Size(40, 37),
                   new google.maps.Point(0, 0),
                   new google.maps.Point(12, 35));

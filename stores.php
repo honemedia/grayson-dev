@@ -19,11 +19,6 @@
 					<input type="submit" id="submitButton" value="Go" name="submit" />
 				</div>
 			</div>
-		    
-<!-- 		    <input type="submit" name="submit" class="button" id="submit" value="go"  /> -->
-		    <!--<div id="goButton" value="GO" name="submit" onclick='document.forms["user-location"].submit();' value="GO"><span>GO</span><span class="icon-btn-arrow"></span></div>-->
-		   <!-- <div type="submit" onclick='document.forms["dealerform"].submit();' id="goButton" class="goButton" name="submit" >Go</div> -->
-
 		</form>
 	</div>
 	
@@ -31,6 +26,7 @@
 	<div id="statusMessage"></div>
 		<div id="loc-list">
 		    <ul id="list"></ul>
+		    <div class="list-overlay"></div>
 		</div>
 		<div id="map"></div>
 	</div>

@@ -5,8 +5,8 @@ $callback = $_GET['callback'];
 $dbTable = $_GET['inventory'];
 $query  = $_GET['query'];
 
-mysql_connect(localhost, "honemedi_admin", "H0nemedi@") or die(mysql_error());
-//mysql_connect(localhost, 'root', "root") or die(mysql_error()); 
+//mysql_connect(localhost, "honemedi_admin", "H0nemedi@") or die(mysql_error());
+mysql_connect(localhost, 'root', "root") or die(mysql_error()); 
 mysql_select_db("honemedi_grayson") or die(mysql_error());
 if($dbTable != 'dealers'){$data = $id ? mysql_query("SELECT * FROM $dbTable WHERE $query='$id'") : mysql_query("SELECT * FROM $dbTable") or die(mysql_error());}else{
 
