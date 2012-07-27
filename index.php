@@ -46,7 +46,7 @@
 			<div class="home-info-module-last">
 				<img src="media/img/home-grayson-pacific-coast.jpg?v=2" alt="" />
 				<div class="home-info-module-title">Pacific Coast Featherblend</div>
-				<p class="home-info-module-description">Featherblend filling comprised of feather and down or softness and Ultima Supreme polyester fiber for enhanced resiliency and loft.</p>
+				<p class="home-info-module-description">Featherblend filling comprised of feather and down for softness and Ultima Supreme polyester fiber for enhanced resiliency and loft.</p>
 			</div>
 		</div><!-- END .home-module-container -->
 	</div><!-- END .grayson-difference-columns -->
