@@ -15,7 +15,7 @@
 			
 			<div class="contact-title">
 				<div class="contact-arrow-wrap">
-					<img class="contact-title-arrow" src="media/img/arrow.png">
+					<img class="contact-title-arrow" src="media/img/arrow.png" alt="" />
 				</div>
 				<div class="contact-title-wrap">
 					<p>address</p>
@@ -27,7 +27,7 @@
 			
 			<div class="contact-title">
 				<div class="contact-arrow-wrap">
-					<img class="contact-title-arrow" src="media/img/arrow.png">
+					<img class="contact-title-arrow" src="media/img/arrow.png" alt="" />
 				</div>
 				<div class="contact-title-wrap">
 					<p>phone</p>
@@ -39,7 +39,7 @@
 			
 			<div class="contact-title">
 				<div class="contact-arrow-wrap">
-					<img class="contact-title-arrow" src="media/img/arrow.png">
+					<img class="contact-title-arrow" src="media/img/arrow.png" alt="" />
 				</div>
 				<div class="contact-title-wrap">
 					<p>fax</p>
@@ -51,7 +51,7 @@
 			
 			<div class="contact-title">
 				<div class="contact-arrow-wrap">
-					<img class="contact-title-arrow" src="media/img/arrow.png">
+					<img class="contact-title-arrow" src="media/img/arrow.png" alt="" />
 				</div>
 				<div class="contact-title-wrap">
 					<p>email sales</p>
@@ -63,7 +63,7 @@
 			
 			<div class="contact-title">
 				<div class="contact-arrow-wrap">
-					<img class="contact-title-arrow" src="media/img/arrow.png">
+					<img class="contact-title-arrow" src="media/img/arrow.png" alt="" />
 				</div>
 				<div class="contact-title-wrap">
 					<p>email support</p>
