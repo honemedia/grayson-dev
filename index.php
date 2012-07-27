@@ -3,7 +3,7 @@
 <link media="all" rel="stylesheet" href="media/css/grayson.base.css?v=2" />
 <div id="mainContainer">
 	<header>
-	<!-- TESTING -->
+	
 		<h1><a class="logo" href="">Grayson Furniture</a></h1>
 		<nav id='nav' role='navigation'></nav>
 	</header>
@@ -75,11 +75,16 @@ $('#homeFeatured').click(function() {
 function onBefore(){
 	$('.homeFeaturedWording').fadeOut('fast');
 	
-
+	
 	var collectionData = $(this).attr('id').split("-");
+	var collectionId = $(this).attr('id');
+
 	var collectionName = collectionData[collectionData.length-1];
 	
 	$('.homeFeaturedWording').html('<span class="collection-home-title">'+$(this).attr('class')+'</span> <span class="collection-home-brand">'+collectionName+'</span> <img src="media/img/icon-btn-arrow.png" class="feature-btn-arrow" />')
+	
+	$('.homeFeaturedWording').attr('id',collectionId)
+	
 	
 	$('.homeFeaturedWording').fadeIn('slow');
 	
