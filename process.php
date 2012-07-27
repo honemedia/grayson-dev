@@ -7,7 +7,7 @@ $email = strip_tags($_POST['email']);
 $message = strip_tags($_POST['message']);
 
 // Send Message
-mail( "mason@honemedia.com", "Contact Form Submission",
+mail( "support@graysonfurniture.com", "Contact Form Submission",
 "Topic: $subject\nName: $name\nEmail: $email\nMessage: $message\n",
-"From: Grayson Furniture <mason@honemedia.com>" );
+"From: Grayson Furniture <support@graysonfurniture.com>" );
 ?>
