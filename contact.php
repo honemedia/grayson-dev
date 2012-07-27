@@ -56,7 +56,7 @@
 				<div class="contact-title-wrap">
 					<p>email sales</p>
 					<div class="contact-description">
-						<a href="mailto:sales@graysonfurntiture.com?subject=A%20message%20from%20Graysonfurniture.com">sales@graysonfurniture.com</a>
+						<a href="mailto:sales@graysonfurniture.com?subject=A%20message%20from%20Graysonfurniture.com">sales@graysonfurniture.com</a>
 					</div>
 				</div>
 			</div>
@@ -68,7 +68,7 @@
 				<div class="contact-title-wrap">
 					<p>email support</p>
 					<div class="contact-description">
-						<a href="mailto:support@graysonfurntiture.com?subject=A%20message%20from%20Graysonfurniture.com">support@graysonfurniture.com</a>
+						<a href="mailto:support@graysonfurniture.com?subject=A%20message%20from%20Graysonfurniture.com">support@graysonfurniture.com</a>
 					</div>
 				</div>
 			</div>
