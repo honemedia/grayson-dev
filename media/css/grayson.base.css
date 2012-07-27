@@ -421,7 +421,7 @@ a.dealer-btn:hover {opacity: .8; -webkit-transition: all .2s ease; -moz-transiti
 .detail-body-tns ul li {float: left; text-align: center}
 .detail-body-tns ul li a {float: left; text-align: center; height: auto; margin-top: 0;}
 .detail-tn-text-wrap {float: left; width: 100%; height: auto; }
-.detail-tn-text-name {float: left; width: 100%; height: auto; /* color: #fff;  */ font-size: 1em; padding: 6px 0 0 0}
+.detail-tn-text-name {float: left; width: 100%; height: auto; font-size: 1em; padding: 6px 0 0 0; ;}
 .detail-tn-text-price {float: left; width: 100%; height: auto; margin-bottom: 10px;/*  color: #bfb7b2; */}
 .detail-body-tns img {
 	float: left; width: 206px; height: 150px; cursor:pointer;
@@ -436,7 +436,8 @@ a.dealer-btn:hover {opacity: .8; -webkit-transition: all .2s ease; -moz-transiti
 	}
 	
 .detail-body-tns a.tn-selected {
-	background-color: #8d8168;
+	background-color: rgba(141,129,104,.8);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
 	-webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .5); box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .5);
 }
 
