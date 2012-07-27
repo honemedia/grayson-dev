@@ -57,7 +57,7 @@
 
 
 <script type="text/javascript" src="media/js/libs/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="media/js/libs/jquery.cycle.js"></script>
+<script type="text/javascript" src="media/js/libs/jquery.cycle.lite.js"></script>
 <script type="text/javascript" src="media/js/main.js"></script>
 
 

@@ -12,8 +12,6 @@
 
 </div><!-- END #mainContainer -->
 
-<!-- http:\//honemedia.com/dev/grayson/r2/ -->
-
 <script type="text/javascript" src="media/js/libs/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="media/js/main.js"></script>
 

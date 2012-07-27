@@ -114,9 +114,9 @@
 
 
 <script type="text/javascript"  src="media/js/libs/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="media/js/libs/jquery.validate.js"></script>
+<script type="text/javascript" src="media/js/libs/jquery.validate.min.js"></script>
 <script type="text/javascript" src="media/js/libs/jquery.placeholder.js"></script>
-<script type="text/javascript" src="media/js/libs/jquery.form.js"></script>
+<script type="text/javascript" src="media/js/libs/jquery.form.min.js"></script>
 <script type="text/javascript"  src="media/js/main.js"></script>
 
 <script type="text/javascript">
@@ -140,38 +140,6 @@ function highlight(field) {
 	field.select();
 }
 
-/* MAKE HTML5 PLACEHOLDERS WORK FOR FIREFOX */
-/*
-function activatePlaceholders() {
-		var detect = navigator.userAgent.toLowerCase(); 
-		if (detect.indexOf("safari") > 0) return false;
-		var inputs = document.getElementsByTagName("input");
-		for (var i=0;i<inputs.length;i++) {
-			if (inputs[i].getAttribute("type") == "text") {
-				var placeholder = inputs[i].getAttribute("placeholder");
-				if (placeholder.length > 0) {
-					inputs[i].value = placeholder;
-					inputs[i].onclick = function() {
-						if (this.value == this.getAttribute("placeholder")) {
-							this.value = "";
-						}
-						return false;
-					}
-					inputs[i].onblur = function() {
-						if (this.value.length < 1) {
-							this.value = this.getAttribute("placeholder");
-						}
-					}
-				}
-			}
-		}
-		
-	}
-	
-	window.onload = function() {
-		activatePlaceholders();
-	}
-*/
 
 
 </script>
