@@ -125,7 +125,7 @@ if(getURLParameter('id')=='null'){document.location.href = "collections.php"}
 
 $(document).ready(function() {
 	
-	getData("GET", "http://honemedia.com/dev/grayson/r2/db.php?callback=collectionDetailsData&inventory=products&query=collectionID&id="+getURLParameter('id'),"collectionDetailsData","callback=collectionDetailsData&errorCallBackName=collectionDetailsDataError");
+	getData("GET", "db.php?callback=collectionDetailsData&inventory=products&query=collectionID&id="+getURLParameter('id'),"collectionDetailsData","callback=collectionDetailsData&errorCallBackName=collectionDetailsDataError");
 	
 	
         
