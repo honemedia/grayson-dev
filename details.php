@@ -1,4 +1,5 @@
 <?php include("header.html"); ?>
+
 <div id="mainContainer" >
 	<header>
 		<h1><a class="logo" href="index.php">Grayson</a></h1>
@@ -104,11 +105,12 @@
 </div><!-- END #mainContainer -->
 
 <script type="text/javascript" src="media/js/libs/jquery-1.7.2.min.js"></script>
+
 <script type="text/javascript" src="media/js/libs/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="media/js/libs/jquery.mousewheel.min.js"></script>
-
-<script type="text/javascript" src="media/js/libs/organicTabs/jquery.organictabs.js"></script>
 <script type="text/javascript" src="media/js/libs/magiczoom/magiczoom.js"></script>
+<script type="text/javascript" src="media/js/libs/organicTabs/jquery.organictabs.js"></script>
+
 <script type="text/javascript" src="media/js/main.js"></script>
 
 <script type="text/javascript">		 	
@@ -120,14 +122,16 @@
 </script>
 
 <script type="text/javascript">
-
 if(getURLParameter('id')=='null'){document.location.href = "collections.php"}
-
+//
 $(document).ready(function() {
+	
 	
 	getData("GET", "db.php?callback=collectionDetailsData&inventory=products&query=collectionID&id="+getURLParameter('id'),"collectionDetailsData","callback=collectionDetailsData&errorCallBackName=collectionDetailsDataError");
 	
 	
+
+
         
 }); //end document.ready
 </script>
