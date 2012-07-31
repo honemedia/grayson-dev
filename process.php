@@ -7,7 +7,9 @@ $email = strip_tags($_POST['email']);
 $message = strip_tags($_POST['message']);
 
 // Send Message
+if($email && $message){
 mail( "support@graysonfurniture.com", "Contact Form Submission",
 "Topic: $subject\nName: $name\nEmail: $email\nMessage: $message\n",
 "From: Grayson Furniture <support@graysonfurniture.com>" );
+}
 ?>
