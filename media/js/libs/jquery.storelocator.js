@@ -241,10 +241,14 @@ $.fn.storeLocator = function(options) {
                 
                 var distance = GeoCodeCalc.CalcDistance(orig_lat,orig_lng,lat,lng, GeoCodeCalc.EarthRadiusInMiles);
                 
+                //alert(distance < settings.distanceAlert);
                 //Create the array
+                if(distance < settings.distanceAlert) {
                 locationset[i] = new Array (distance, name, lat, lng, address, address2, city, state, postal, phone, web, hours1, hours2, hours3);
-
                 i++;
+                }
+
+                
               });
             }
             else
@@ -287,7 +291,8 @@ $.fn.storeLocator = function(options) {
           
           //alert(locationset[0]);
           if(!locationset[0]){
-	           alert("Unfortunately, no dealers sell this collection. Please contact Grayson Furniture for additional information.");			    defaultError(); return;
+	           alert("Unfortunately, no dealers sell this collection. Please contact Grayson Furniture for additional information.");			   
+	            defaultError(); return;
 	            }
           
           //Check the closest marker
